@@ -18,7 +18,7 @@ function App() {
 
 const createDigits=()=>{
   const digits=[];
-  for(let i=1;i<10;i++){
+  for(let i=9;i>=1;i--){
     digits.push(
       <button onClick={()=>updateCalc(i.toString())} key={i}>{i}</button>
     )
